@@ -2,7 +2,7 @@
 #include "viech.h"
 
 #include <objbase.h>
-#include <iostream.h> // include important C/C++ stuff
+#include <iostream> // include important C/C++ stuff
 #include <conio.h>
 #include <stdlib.h>
 
@@ -191,7 +191,7 @@ short main(short argc, char* argv[])
 								l+=Soup[i];
 						//		printf("%c",Soup[i]);
 						//cout<<"\n";
-						cout<<"Parent: "<<tempn->ID<<"  Laenge:"<<tempn->Laenge<<" CRC: "<<l;
+						std::cout<<"Parent: "<<tempn->ID<<"  Laenge:"<<tempn->Laenge<<" CRC: "<<l;
 						if(tempn->Child)
 						{
 							l=0;
@@ -200,7 +200,7 @@ short main(short argc, char* argv[])
 									l+=Soup[i];
 							//cout<<"  Child: "<<tempn->Child->ID<<"  Laenge:"<<tempn->Child->Laenge<<" CRC: "<<l;
 						}
-						cout<<"\n";
+						std::cout<<"\n";
 						//cout << "used: " <<l<<"\n";
 					}
 

@@ -2281,7 +2281,7 @@ void Viech::WriteC(unsigned long position,unsigned char wert)
 			if(((position>=StartPosition)&&(position<=StartPosition+Laenge)) || ((position>=Child->StartPosition)&&(position<=Child->StartPosition+Child->Laenge)))
 			{
 				Soup[position%SIZE_OF_SOUP]=mutwert;
-				cout<<(unsigned short)mutwert;
+				std::cout<<(unsigned short)mutwert;
 			}
 			else
 				flags|=FLAG_ERROR;
@@ -2291,7 +2291,7 @@ void Viech::WriteC(unsigned long position,unsigned char wert)
 			if((position>=StartPosition)&&(position<=StartPosition+Laenge))
 			{
 				Soup[position%SIZE_OF_SOUP]=mutwert;
-				cout<<(unsigned short)mutwert;
+				std::cout<<(unsigned short)mutwert;
 			}
 			else
 				flags|=FLAG_ERROR;
